@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>crop prediction</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<center>
+      <h1>CROP PREDICTION</h1>
+<form action="./predict" method="POST">
+    <table>
+        <tr>
+            <td><label for="n">N</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="n" placeholder="Enter Nitrogen:"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="k">K</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="k" placeholder="Enter Potassium:"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="p">P</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="p" placeholder="Enter Phosphorous:"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="pH">PH</label></td>
+            <td>:</td>
+            <td>
+                <input type="float" name="pH" placeholder="Enter pH value:"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><input id="btn" type="submit" value="Predict" /></td>
+        </tr>
+    </table>
+    <p>Prediction:{{pred}}</p>
+</form>
+</center>
+</body>
+</html>
